@@ -1,0 +1,112 @@
+﻿@viewModel EventAdmin.PL.ViewModels.Organizers.DetailViewModel, EventAdmin.PL
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="main-panel">
+        <div class="">
+            <br />
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <!--Navbar-->
+                    <div class="card card-plain">
+                        <div class="card card-plain">
+                            <div class="card-header card-header-primary">
+                                <h3 class="card-title"><b>{{value: Title}}</b></h3>
+                                <p class="card-category">
+                                    {{value: Subtitle}}
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--End Navbar-->
+                        <!--Content-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header card-header-primary">
+                                        <h4 class="card-title">Form</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Name</label>
+                                                        <dot:TextBox Text="{value: Organizer.Name}" class="form-control" disabled="true" />
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Webpage</label>
+                                                        <dot:TextBox Text="{value: Organizer.WebPage}" class="form-control" disabled="true" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <dot:TextBox Text="{value: Organizer.Email}" class="form-control" disabled="true" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="">Logo Link</label>
+                                                        <dot:TextBox Text="{value: Organizer.LogoLink}" class="form-control" disabled="true" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>City</label>
+                                                        <dot:TextBox Text="{value: Organizer.FacebookLink}" class="form-control" disabled="true" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+
+                                                        <label>Country</label>
+                                                        <dot:TextBox Text="{value: Organizer.InstagramLink}" class="form-control" disabled="true" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Postal Code</label>
+                                                        <dot:TextBox Text="{value: Organizer.TwitterLink}" class="form-control" disabled="true" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>About</label>
+                                                        <div class="form-group">
+                                                            <dot:TextBox Text="{value: Organizer.Description}" type="MultiLine" Rows="5" class="form-control" disabled="true" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <dot:Button Text="Delete Organizer" Click="{command: DeleteOrganizer()}" class="btn btn-primary pull-right" />
+                                            <dot:RouteLink RouteName="EditOrganizer" Param-IdOrganizer="{value: Organizer.IdOrganizer}" Text="Edit Organizer" class="btn btn-primary pull-right" />
+
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</dot:Content>
+

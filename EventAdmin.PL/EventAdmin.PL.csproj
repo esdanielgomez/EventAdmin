@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="**/*.dothtml;**/*.dotmaster;**/*.dotcontrol" Exclude="obj/**/*.*;bin/**/*.*" CopyToPublishDirectory="Always" />
+    <None Remove="**/*.dothtml;**/*.dotmaster;**/*.dotcontrol" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="dotvvm_serialized_config.json.tmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DotVVM.AspNetCore" Version="2.4.0.1" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EventAdmin.BL\EventAdmin.BL.csproj" />
+    <ProjectReference Include="..\EventAdmin.DAL\EventAdmin.DAL.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,118 @@
+﻿@viewModel EventAdmin.PL.ViewModels.Speakers.CreateViewModel, EventAdmin.PL
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="main-panel">
+        <div class="">
+            <br />
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <!--Navbar-->
+                    <div class="card card-plain">
+                        <div class="card card-plain">
+                            <div class="card-header card-header-primary">
+                                <h3 class="card-title"><b>{{value: Title}}</b></h3>
+                                <p class="card-category">
+                                    {{value: Subtitle}}
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--End Navbar-->
+                        <!--Content-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header card-header-primary">
+                                        <h4 class="card-title">Form</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="">FirstName</label>
+                                                        <dot:TextBox Text="{value: Speaker.FirstName}" class="form-control" />
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"
+                                                         Validator.InvalidCssClass="has-error"
+                                                         Validator.SetToolTipText="true">
+
+                                                        <label class="bmd-label-floating">SecondName</label>
+                                                        <dot:TextBox Text="{value: Speaker.SecondName}" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="">FirstLastName</label>
+                                                        <dot:TextBox Text="{value: Speaker.FirstLastName}" class="form-control" />
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"
+                                                         Validator.InvalidCssClass="has-error"
+                                                         Validator.SetToolTipText="true">
+
+                                                        <label class="bmd-label-floating">SecondLastName</label>
+                                                        <dot:TextBox Text="{value: Speaker.SecondLastName}" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group" Validator.Value="{value: Speaker.PhotoLink}"
+                                                         Validator.InvalidCssClass="has-error"
+                                                         Validator.SetToolTipText="true">
+
+                                                        <label class="bmd-label-floating">PhotoLink</label>
+                                                        <dot:TextBox Text="{value: Speaker.PhotoLink}" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group" Validator.Value="{value: Speaker.TwitterLink}"
+                                                         Validator.InvalidCssClass="has-error"
+                                                         Validator.SetToolTipText="true">
+
+                                                        <label class="bmd-label-floating">Twitter Prefix (without @)</label>
+                                                        <dot:TextBox Text="{value: Speaker.TwitterLink}" class="form-control" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group" Validator.Value="{value: Speaker.LinkedInLink}"
+                                                         Validator.InvalidCssClass="has-error"
+                                                         Validator.SetToolTipText="true">
+
+                                                        <label class="bmd-label-floating">LinkedInLink</label>
+                                                        <dot:TextBox Text="{value: Speaker.LinkedInLink}" class="form-control" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <dot:Button Text="Add Speaker" Click="{command: AddSpeaker()}" class="btn btn-primary pull-right" />
+
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</dot:Content>
+

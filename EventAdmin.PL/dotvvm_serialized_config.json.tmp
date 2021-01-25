@@ -1,0 +1,367 @@
+{
+  "markup": {
+    "controls": {
+      "$type": "DotVVM.Framework.Configuration.FreezableList`1[[DotVVM.Framework.Configuration.DotvvmControlConfiguration, DotVVM.Framework]], DotVVM.Framework",
+      "$values": [
+        {
+          "tagPrefix": "dot",
+          "namespace": "DotVVM.Framework.Controls",
+          "assembly": "DotVVM.Framework"
+        }
+      ]
+    },
+    "assemblies": {
+      "$type": "DotVVM.Framework.Configuration.FreezableList`1[[System.String, System.Private.CoreLib]], DotVVM.Framework",
+      "$values": []
+    },
+    "defaultDirectives": {
+      "$type": "DotVVM.Framework.Configuration.FreezableDictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], DotVVM.Framework"
+    },
+    "importedNamespaces": {
+      "$type": "DotVVM.Framework.Configuration.FreezableList`1[[DotVVM.Framework.Compilation.NamespaceImport, DotVVM.Framework]], DotVVM.Framework",
+      "$values": [
+        {
+          "namespace": "DotVVM.Framework.Binding.HelperNamespace",
+          "alias": null
+        }
+      ]
+    },
+    "DefaultExtensionParameters": {
+      "$type": "DotVVM.Framework.Configuration.FreezableList`1[[DotVVM.Framework.Compilation.ControlTree.BindingExtensionParameter, DotVVM.Framework]], DotVVM.Framework",
+      "$values": []
+    }
+  },
+  "routes": {
+    "Default": {
+      "url": "",
+      "virtualPath": "Views/Default.dothtml",
+      "defaultValues": {}
+    },
+    "Organizer": {
+      "url": "Organizer",
+      "virtualPath": "Views/Organizers/List.dothtml",
+      "defaultValues": {}
+    },
+    "CreateOrganizer": {
+      "url": "CreateOrganizer",
+      "virtualPath": "Views/Organizers/Create.dothtml",
+      "defaultValues": {}
+    },
+    "EditOrganizer": {
+      "url": "EditOrganizer/{IdOrganizer}",
+      "virtualPath": "Views/Organizers/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "DetailOrganizer": {
+      "url": "DetailOrganizer/{IdOrganizer}",
+      "virtualPath": "Views/Organizers/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "Speaker": {
+      "url": "Speaker",
+      "virtualPath": "Views/Speakers/List.dothtml",
+      "defaultValues": {}
+    },
+    "CreateSpeaker": {
+      "url": "CreateSpeaker",
+      "virtualPath": "Views/Speakers/Create.dothtml",
+      "defaultValues": {}
+    },
+    "EditSpeaker": {
+      "url": "EditSpeaker/{IdSpeaker}",
+      "virtualPath": "Views/Speakers/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "DetailSpeaker": {
+      "url": "DetailSpeaker/{IdSpeaker}",
+      "virtualPath": "Views/Speakers/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "Sponsor": {
+      "url": "Sponsor",
+      "virtualPath": "Views/Sponsors/List.dothtml",
+      "defaultValues": {}
+    },
+    "CreateSponsor": {
+      "url": "CreateSponsor",
+      "virtualPath": "Views/Sponsors/Create.dothtml",
+      "defaultValues": {}
+    },
+    "EditSponsor": {
+      "url": "EditSponsor/{IdSponsor}",
+      "virtualPath": "Views/Sponsors/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "DetailSponsor": {
+      "url": "DetailSponsor/{IdSponsor}",
+      "virtualPath": "Views/Sponsors/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "Session": {
+      "url": "Session",
+      "virtualPath": "Views/Sessions/List.dothtml",
+      "defaultValues": {}
+    },
+    "CreateSession": {
+      "url": "CreateSession",
+      "virtualPath": "Views/Sessions/Create.dothtml",
+      "defaultValues": {}
+    },
+    "EditSession": {
+      "url": "EditSession/{IdSession}",
+      "virtualPath": "Views/Sessions/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "DetailSession": {
+      "url": "DetailSession/{IdSession}",
+      "virtualPath": "Views/Sessions/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "About": {
+      "url": "About",
+      "virtualPath": "Views/About.dothtml",
+      "defaultValues": {}
+    },
+    "Organizers_Create": {
+      "url": "Organizers/Create",
+      "virtualPath": "Views/Organizers/Create.dothtml",
+      "defaultValues": {}
+    },
+    "Organizers_Detail": {
+      "url": "Organizers/Detail",
+      "virtualPath": "Views/Organizers/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "Organizers_Edit": {
+      "url": "Organizers/Edit",
+      "virtualPath": "Views/Organizers/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "Organizers_List": {
+      "url": "Organizers/List",
+      "virtualPath": "Views/Organizers/List.dothtml",
+      "defaultValues": {}
+    },
+    "Sessions_Create": {
+      "url": "Sessions/Create",
+      "virtualPath": "Views/Sessions/Create.dothtml",
+      "defaultValues": {}
+    },
+    "Sessions_Detail": {
+      "url": "Sessions/Detail",
+      "virtualPath": "Views/Sessions/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "Sessions_Edit": {
+      "url": "Sessions/Edit",
+      "virtualPath": "Views/Sessions/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "Sessions_List": {
+      "url": "Sessions/List",
+      "virtualPath": "Views/Sessions/List.dothtml",
+      "defaultValues": {}
+    },
+    "Speakers_Create": {
+      "url": "Speakers/Create",
+      "virtualPath": "Views/Speakers/Create.dothtml",
+      "defaultValues": {}
+    },
+    "Speakers_Detail": {
+      "url": "Speakers/Detail",
+      "virtualPath": "Views/Speakers/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "Speakers_Edit": {
+      "url": "Speakers/Edit",
+      "virtualPath": "Views/Speakers/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "Speakers_List": {
+      "url": "Speakers/List",
+      "virtualPath": "Views/Speakers/List.dothtml",
+      "defaultValues": {}
+    },
+    "Sponsors_Create": {
+      "url": "Sponsors/Create",
+      "virtualPath": "Views/Sponsors/Create.dothtml",
+      "defaultValues": {}
+    },
+    "Sponsors_Detail": {
+      "url": "Sponsors/Detail",
+      "virtualPath": "Views/Sponsors/Detail.dothtml",
+      "defaultValues": {}
+    },
+    "Sponsors_Edit": {
+      "url": "Sponsors/Edit",
+      "virtualPath": "Views/Sponsors/Edit.dothtml",
+      "defaultValues": {}
+    },
+    "Sponsors_List": {
+      "url": "Sponsors/List",
+      "virtualPath": "Views/Sponsors/List.dothtml",
+      "defaultValues": {}
+    }
+  },
+  "resources": {
+    "ScriptResource": {
+      "globalize": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.Globalize.globalize.min.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 1
+      },
+      "dotvvm.polyfill.bundle": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.Polyfills.polyfill.bundle.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 1
+      },
+      "dotvvm.internal": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.min.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [
+          "knockout",
+          "dotvvm.polyfill"
+        ],
+        "RenderPosition": 1
+      },
+      "dotvvm.debug": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.Debug.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [
+          "dotvvm"
+        ],
+        "RenderPosition": 1
+      },
+      "knockout": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.knockout-latest.js",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/javascript",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 1
+      }
+    },
+    "DotVVM.Framework.ResourceManagement.PolyfillResource": {
+      "dotvvm.polyfill": {
+        "Dependencies": [],
+        "RenderPosition": 1
+      }
+    },
+    "DotVVM.Framework.ResourceManagement.StylesheetResource": {
+      "Styles": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.UrlResourceLocation, DotVVM.Framework",
+          "Url": "~/assets/css/material-dashboard.css?v=2.1.2"
+        },
+        "LocationFallback": null,
+        "MimeType": "text/css",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 0
+      },
+      "dotvvm.fileUpload-css": {
+        "Location": {
+          "$type": "DotVVM.Framework.ResourceManagement.EmbeddedResourceLocation, DotVVM.Framework",
+          "Assembly": "DotVVM.Framework, Version=2.4.0.1, Culture=neutral, PublicKeyToken=23f3607db32275da",
+          "Name": "DotVVM.Framework.Resources.Scripts.DotVVM.FileUpload.css",
+          "DebugFilePath": null
+        },
+        "LocationFallback": null,
+        "MimeType": "text/css",
+        "VerifyResourceIntegrity": false,
+        "IntegrityHash": null,
+        "Dependencies": [],
+        "RenderPosition": 0
+      }
+    },
+    "InlineScriptResource": {
+      "dotvvm": {
+        "Code": "if (window.dotvvm) { throw 'DotVVM is already loaded!'; } window.dotvvm = new DotVVM();",
+        "Dependencies": [
+          "dotvvm.internal"
+        ],
+        "RenderPosition": 1
+      }
+    }
+  },
+  "security": {
+    "signingKey": null,
+    "encryptionKey": null,
+    "sessionIdCookieName": "dotvvm_sid_{0}"
+  },
+  "runtime": {},
+  "defaultCulture": "es-EC",
+  "clientSideValidation": true,
+  "useHistoryApiSpaNavigation": true,
+  "experimentalFeatures": {
+    "lazyCsrfToken": {
+      "includedRoutes": {
+        "$type": "DotVVM.Framework.Configuration.FreezableSet`1[[System.String, System.Private.CoreLib]], DotVVM.Framework",
+        "$values": []
+      },
+      "excludedRoutes": {
+        "$type": "DotVVM.Framework.Configuration.FreezableSet`1[[System.String, System.Private.CoreLib]], DotVVM.Framework",
+        "$values": []
+      }
+    },
+    "serverSideViewModelCache": {
+      "includedRoutes": {
+        "$type": "DotVVM.Framework.Configuration.FreezableSet`1[[System.String, System.Private.CoreLib]], DotVVM.Framework",
+        "$values": []
+      },
+      "excludedRoutes": {
+        "$type": "DotVVM.Framework.Configuration.FreezableSet`1[[System.String, System.Private.CoreLib]], DotVVM.Framework",
+        "$values": []
+      }
+    }
+  },
+  "debug": true,
+  "AllowBindingDebugging": false,
+  "compiledViewsAssemblies": {
+    "$type": "DotVVM.Framework.Configuration.FreezableList`1[[System.String, System.Private.CoreLib]], DotVVM.Framework",
+    "$values": [
+      "CompiledViews.dll"
+    ]
+  }
+}

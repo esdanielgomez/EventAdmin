@@ -1,0 +1,8 @@
+﻿@viewModel EventAdmin.PL.ViewModels.DefaultViewModel, EventAdmin.PL
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+	
+
+</dot:Content>
+
+

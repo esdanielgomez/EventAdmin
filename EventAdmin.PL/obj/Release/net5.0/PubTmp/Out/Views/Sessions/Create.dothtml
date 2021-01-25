@@ -1,0 +1,151 @@
+﻿@viewModel EventAdmin.PL.ViewModels.Sessions.CreateViewModel, EventAdmin.PL
+@masterPage Views/MasterPage.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <div class="main-panel">
+        <div class="">
+            <br />
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <!--Navbar-->
+                    <div class="card card-plain">
+                        <div class="card card-plain">
+                            <div class="card-header card-header-primary">
+                                <h3 class="card-title"><b>{{value: Title}}</b></h3>
+                                <p class="card-category">
+                                    {{value: Subtitle}}
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--End Navbar-->
+                        <!--Content-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header card-header-primary">
+                                        <h4 class="card-title">Form</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label class="">Name</label>
+                                                        <dot:TextBox Text="{value: Session.Name}" class="form-control" />
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="">StartDate</label>
+                                                        <dot:TextBox Text="{value: Session.StartDate}" 
+                                                                     ValueType="DateTime" 
+							                                         FormatString="dd/MM/yyyy HH:mm"
+                                                                     class="form-control" />
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="">EndDate</label>
+                                                        <dot:TextBox Text="{value: Session.EndDate}" 
+                                                                     ValueType="DateTime" 
+							                                         FormatString="dd/MM/yyyy HH:mm"
+                                                                     class="form-control" />
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>SessionType</label>
+                                                        <div class="form-group" Validator.Value="{value: Session.IdSessionType}"
+                                                             Validator.InvalidCssClass="has-error"
+                                                             Validator.SetToolTipText="true">
+
+                                                            <dot:ComboBox DataSource="{value: Types}"
+                                                                          SelectedValue="{value: SessionTypeModelSelected}"
+                                                                          ItemTextBinding="{value: Name}"
+                                                                          EmptyItemText="Select..."
+                                                                          data-style="select-with-transition"
+                                                                          class="dropdown bootstrap-select show-tick">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>SessionLevel</label>
+                                                        <div class="form-group" Validator.Value="{value: Session.IdSessionLevel}"
+                                                             Validator.InvalidCssClass="has-error"
+                                                             Validator.SetToolTipText="true">
+
+                                                            <dot:ComboBox DataSource="{value: Levels}"
+                                                                          SelectedValue="{value: SessionLevelModelSelected}"
+                                                                          ItemTextBinding="{value: Name}"
+                                                                          EmptyItemText="Select..."
+                                                                          data-style="select-with-transition"
+                                                                          class="dropdown bootstrap-select show-tick">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Speakers</label>
+                                                        <div class="form-group">
+                                                            <dot:ListBox DataSource="{value: Speakers}" SelectedValue="{value: SpeakerToAdd}"
+                                                                         SelectionChanged="{command: AddToListSpeaker()}"
+                                                                         ItemTextBinding="{value: FirstName + " " + FirstLastName}"
+                                                                         Size="5"
+                                                                         style="width: 100%;"/>
+                                                            
+
+                                                            <dot:ListBox DataSource="{value: SpeakersSelected}" SelectedValue="{value: SpeakerToRemove}"
+                                                                         SelectionChanged="{command: RemoveFromListSpeaker()}"
+                                                                         ItemTextBinding="{value: FirstName + " " + FirstLastName}"
+                                                                         Size="3"
+                                                                         style="width: 100%;"/>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Description</label>
+                                                        <div class="form-group" Validator.Value="{value: Session.Description}"
+                                                             Validator.InvalidCssClass="has-error"
+                                                             Validator.SetToolTipText="true">
+
+                                                            <dot:TextBox Text="{value: Session.Description}" type="MultiLine" Rows="5" class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <dot:Button Text="Add Session" Click="{command: AddSession()}" class="btn btn-primary pull-right" />
+
+                                            <div class="clearfix"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</dot:Content>
+
